@@ -92,7 +92,7 @@ public class Controller implements Initializable {
                 A * point.get(0),
                 B * point.get(1)
         )).collect(Collectors.toList());
-        if (beta < 0) {
+        if (false) {
             points = points.stream().map(point -> List.of(
                     (point.get(0) * Math.cos(alpha) +
                             point.get(1) * Math.sin(alpha)) *
