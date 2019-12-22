@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="583.0" prefWidth="700.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <ScatterChart fx:id="pointsChart" layoutX="186.0" layoutY="14.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+      <ComboBox fx:id="matricesDictionary" layoutX="14.0" layoutY="30.0" prefWidth="150.0" />
+      <TextArea fx:id="matrixField" editable="false" layoutX="14.0" layoutY="56.0" prefHeight="70.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="139.0" prefHeight="18.0" prefWidth="150.0" text="Коэффициент масштаба" />
+      <TextField fx:id="kField" layoutX="15.0" layoutY="157.0" />
+      <Button fx:id="rerenderChart" layoutX="591.0" layoutY="414.0" mnemonicParsing="false" text="Перерисовать" />
+      <TextArea fx:id="resultField" editable="false" layoutX="326.0" layoutY="447.0" prefHeight="128.0" prefWidth="358.0" />
+   </children>
+</AnchorPane>
